@@ -1,0 +1,33 @@
+/* CSS Document */
+/* BOURDEL Raphaël */
+
+@media(max-width:1000px){
+	
+	#reservations{
+		text-align: center;
+		padding-bottom: 20px;
+	}
+	
+	#reservations h3, #reservations #bouton{
+		float: inherit;
+	}
+	
+	#reservations h3{
+		margin-bottom: 10px;
+	}
+}
+
+@media(max-width:800px){
+	
+	#menu{
+		display: none;
+	}
+	
+	#menuresp{
+		display: inherit;
+	}
+	
+	.btn-nav{
+		display: inherit;
+	}
+}

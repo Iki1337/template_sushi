@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* BOURDEL Raphaël */
+@keyframes gauche{
+	0%{left:0%;} 
+	20%{left:0%;} /* Jusqu'à 20% de l'animation, le slider n'a pas encore bougé */
+	25%{left:-100%;} 
+	45%{left:-100%;} /* A 25% de la durée de l'animation, le slider reste immobile sur l'image suivante jusquà 45% */
+	50%{left:-200%;} 
+	70%{left:-200%;}/* A 50% de la durée de l'animation, le slider reste immobile sur l'image suivante jusquà 70% */
+	75%{left:-300%;}
+	95%{left:-300%;} /* A 75% de la durée de l'animation, le slider reste immobile sur l'image suivante jusquà 95% */
+	100%{left:-400%;} /* A 100% de la durée de l'animation, le slider reste immobile sur la dernière image */
+}
+
+.slider{
+	max-width: 100%; /* Largeur Slider */
+	height:100%; /* Hauteur Slider */
+	overflow:hidden; /* Cacher les autres photos */
+}
+
+.slider figure{
+	position:relative;
+	width:500%; /* 100% x Nb Photos */
+	animation:50s gauche infinite; /*Fréquence, Nom animation, Periode */
+	margin:0;
+	padding:0;
+}
+
+.slider figure img{
+	width:20%; /* 100% / Nb Photos */
+	float:left; /* Alignement éléments */
+}

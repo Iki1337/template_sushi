@@ -1,0 +1,19 @@
+@charset "utf-8";
+/*BOURDEL Raphaël*/
+
+.gallery{
+	margin:10px 0;
+	text-align: center;
+}
+
+.gallery img{
+	width: 150px;
+	padding: 5px;
+	filter: grayscale(100%);
+	transition: 1s;
+}
+
+.gallery img:hover{
+	filter: grayscale(0);
+	transform: scale(1.1);
+}
